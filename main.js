@@ -25,17 +25,17 @@ const pedido = () => {
 const queTamanioEs = (tam) => {
     switch (tam) {
         case 'P':
-            return 'porcion';
+            return 'porcion/es';
         case 'p':
-            return 'porcion';
+            return 'porcion/es';
         case 'C':
-            return 'chica';
+            return 'chica/s';
         case 'c':
-            return 'chica';
+            return 'chica/s';
         case 'G':
-            return 'grande';
+            return 'grande/s';
         case 'g':
-            return 'grande';
+            return 'grande/s';
     }
 }
 
