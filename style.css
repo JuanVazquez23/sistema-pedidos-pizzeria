@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .bodyIndex {
     height: 100vh;
     width: 100vw;
@@ -8,19 +13,33 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60% 40%;
-    grid-template-areas: "marca marca" "menuArea pedido";
+    grid-template-rows: 10% 70% 20%;
+    grid-template-areas: "header header" "maps maps" "menuArea pedido";
     column-gap: 20%;
 }
 
-.marca {
-    grid-area: marca;
-    text-align: center;
-    font-size: 5rem;
+.headerIndex {
+    background-color: white;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 0 black;
 }
-.marca p {
-    display: inline-block;
-    padding: 10px 20px;
+.headerIndex img {
+    height: 90%;
+}
+.maps {
+    grid-area: maps;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.maps iframe {
+    width: 40%;
+    height: 90%;
 }
 .botonMenu {
     grid-area: menuArea;
@@ -34,9 +53,8 @@
     align-items: flex-start;
 }
 
-
 .boton {
-    height: 20%;
+    height: 40%;
     width: 50%;
     text-align: center;
     display: flex;
