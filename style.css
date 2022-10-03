@@ -34,11 +34,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .maps iframe {
-    width: 40%;
+    width: 50%;
     height: 90%;
 }
 .botonMenu {
@@ -61,15 +61,57 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background-color: darkorange;
+    background-color: rgba(0, 0, 0, 0.5);
     transition: 0.25s;
     padding: 10px 20px;
     border: none;
     border-radius: 15px;
     color: white;
     font-size: 1.6rem;
-  }
-  .boton:hover {
-    background-color: rgb(255, 192, 74);
-    color: white;
-  }
+}
+.boton:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* ------- Media Queries ------- */
+@media screen and (max-width: 767px) {
+    .bodyIndex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 60% 15% 15%;
+        grid-template-areas: "header" "maps" "menuArea" "pedido";
+    }
+    .botonMenu,
+    .botonPedido {
+        justify-content: center;
+        align-items: center;
+    }
+    .boton {
+        font-size: 1rem;
+    }
+    .maps {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .maps iframe {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .bodyIndex {
+        column-gap: 15%;
+    }
+    .boton {
+        font-size: 1.2rem;
+    }
+    .maps iframe {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+
+}
