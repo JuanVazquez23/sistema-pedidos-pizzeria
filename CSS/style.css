@@ -99,7 +99,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(72, 72, 72);
+    background-color: rgb(222, 222, 222); 
 }
 .menu-foto {
     height: 90%;
@@ -119,6 +119,7 @@ body {
 
 /* -------------- PEDIDO -------------- */
 .body-pedidos {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,7 +127,7 @@ body {
 }
 .body-pedidos header {
     height: 10vh;
-    width: 100vw;
+    width: 100%;
 }
 .pedidos {
     width: 70%;
